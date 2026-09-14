@@ -15,3 +15,73 @@ body {
   border-radius: 8px;
   padding: 16px;
 }
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-paid {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.badge-pending {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.badge-overdue {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.badge-failed {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.badge-refunded {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+button:disabled {
+  background-color: var(--muted-text-color);
+  cursor: not-allowed;
+}
+
+select,
+input {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

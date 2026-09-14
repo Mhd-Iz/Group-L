@@ -1,14 +1,15 @@
-import { Routes, Route } from "react-router-dom";
 import BillDashboard from "../pages/student/BillDashboard.jsx";
 import PaymentHistory from "../pages/student/PaymentHistory.jsx";
 import PaymentForm from "../pages/payments/PaymentForm.jsx";
 import VendorDashboard from "../pages/vendor/VendorDashboard.jsx";
 import VendorRegister from "../pages/vendor/VendorRegister.jsx";
 import FinanceDashboard from "../pages/finance/FinanceDashboard.jsx";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function AppRoutes() {
   return (
     <Routes>
+      <Route path="/" element={<Navigate to="/payments" replace />} />
       {/* Student payment views */}
       <Route path="/payments" element={<BillDashboard />} />
       <Route path="/payments/history" element={<PaymentHistory />} />
