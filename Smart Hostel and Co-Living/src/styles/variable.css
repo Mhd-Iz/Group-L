@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #12355b;
+  --secondary-color: #0f8b8d;
+  --accent-color: #38bdf8;
+
+  --background-color: #f4f8fb;
+  --card-color: #ffffff;
+
+  --text-color: #172033;
+  --muted-text-color: #64748b;
+  --border-color: #d9e3ec;
+
+  --success-color: #16a34a;
+  --warning-color: #f59e0b;
+  --error-color: #dc2626;
+  --food-accent-color: #f97316;
+}
